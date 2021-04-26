@@ -1,0 +1,14 @@
+:root {
+    --color-white: #F6F6F5;
+    --color-brown: #956944;
+    --color-swamp: #4A5957;
+    --color-dark-swamp: #434F4D;
+    --color-hell-grey: #666666;
+    --color-light-grey: #817D6C;
+    --color-black: #000000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-swamp);
+}

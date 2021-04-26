@@ -1,0 +1,14 @@
+# Dependency directory
+node_modules
+
+# npm
+package-lock.json
+
+#IDE
+.idea
+
+#Build
+dist
+
+#OS files
+.DS_Store

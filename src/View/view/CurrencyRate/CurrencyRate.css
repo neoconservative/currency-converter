@@ -1,0 +1,131 @@
+.currencyRate {
+    width: 1440px;
+    margin: auto;
+}
+
+.nameBlock {
+    padding-left: 150px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.nameBlockTitleText {
+    font-size: 80px;
+    line-height: 94px;
+    color: var(--color-white);
+    padding-left: 20px;
+}
+
+.nameBlockTitleImg {
+    width: 70px;
+    height: 70px;
+}
+
+.infoBlockWrapper {
+    padding-left: 150px;
+    padding-top: 70px;
+}
+
+.infoBlock {
+    width: 1142px;
+    height: 315px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+.infoBlockTitle {
+    font-size: 30px;
+    color: var(--color-brown);
+    padding-top: 27px;
+    padding-left: 21px;
+}
+
+.currenciesViewBlock {
+    padding-top: 73px;
+    padding-left: 21px;
+    width: 1090px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.currencyBlockName {
+    width: 330px;
+    height: 63px;
+    border-bottom: 3px solid var(--color-hell-grey);
+    background-color: #D7A968;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--color-white);
+    font-size: 30px;
+}
+
+.currencyBlockValue {
+    font-size: 30px;
+    color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 13px;
+}
+
+.historyConversionsBlockWrapper {
+    padding-left: 150px;
+    padding-top: 95px;
+}
+
+
+.historyConversionsBlock {
+    width: 1142px;
+    min-height: 383px;
+    background-color: var(--color-brown);
+    position: relative;
+}
+
+.historyConversionsBlockText {
+    padding-top: 27px;
+    padding-left: 21px;
+    color: var(--color-white);
+    font-size: 40px;
+}
+
+.historyConversionsView {
+    padding-top: 40px;
+    padding-left: 21px;
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+.historyConversionsText{
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.buttonConversionWrapper {
+    padding-left: 21px;
+    padding-top: 34px;
+}
+
+.buttonConversion {
+    width: 365px;
+    height: 57px;
+    border-radius: 50px;
+    background-color: var(--color-white);
+    font-size: 25px;
+    color: var(--color-light-grey);
+}
+
+.buttonConversion:hover {
+    background-color: #c5c5c4;
+}
+
+.buttonConversion:active {
+    background-color: #838382;
+    color: var(--color-white);
+}
+
+.historyConversionsImg {
+    position: absolute;
+    top: -160px;
+    left: 485px;
+}

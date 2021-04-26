@@ -1,0 +1,44 @@
+.converter {
+    background-color: var(--color-swamp);
+    width: 1440px;
+    height: 815px;
+}
+
+.converterNameBlock {
+    padding-left: 150px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.converterNameBlockTitleText {
+    font-size: 80px;
+    line-height: 94px;
+    color: var(--color-white);
+    padding-left: 20px;
+}
+
+.converterNameBlockTitleImg {
+    width: 70px;
+    height: 70px;
+}
+
+.converterWrapper {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.converterCover {
+    width: 764px;
+    height: 328px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+.converterText {
+    color: var(--color-brown);
+    font-size: 45px;
+    padding-top: 27px;
+    padding-left: 21px;
+
+}

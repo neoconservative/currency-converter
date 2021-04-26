@@ -1,0 +1,36 @@
+.formBlockWrapper {
+    padding: 73px 27px 0 27px;
+}
+
+.formBlock {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formBlock input {
+    width: 292px;
+    height: 58px;
+    font-size: 30px;
+    color: var(--color-dark-swamp);
+    padding-left: 34px;
+    border: 2px solid var(--color-dark-swamp);
+    background: var(--color-white);
+    border-radius: 8px;
+}
+
+.formBlock select {
+    width: 330px;
+    height: 63px;
+    font-size: 30px;
+    color: var(--color-dark-swamp);
+    padding-left: 22px;
+    border: 2px solid var(--color-dark-swamp);
+    background: var(--color-white);
+    border-radius: 8px;
+    appearance: none;
+    overflow: hidden;
+    background: url('/dist/asset/images/triangle.png') no-repeat right;
+    background-position-x: calc(100% - 14px);
+    background-position-y: calc(100% - 20px);
+}
