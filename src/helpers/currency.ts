@@ -1,6 +1,6 @@
 import {CURRENCY_TYPE, VALUTES_NAME} from "../const/currency";
 
-export function getCurrenciesArray(data) {
+export function getCurrenciesArray(data): any[] {
     const dollarType = data.Valute.USD.CharCode;
     const euroType = data.Valute.EUR.CharCode;
     const lbType = data.Valute.GBP.CharCode;
@@ -31,6 +31,6 @@ export function getCurrenciesArray(data) {
     return currencies;
 }
 
-export function getStringToFixed(value) {
+export function getStringToFixed(value): number {
     return value.toFixed(4).replace(/0*$/,"");
 }

@@ -11,12 +11,15 @@ const CurrencyRate: React.FC = () => {
     if (loading) {
         return <h1>Loading...</h1>
     }
+
     if (error) {
         return <h1>{error}</h1>
-    } else {
-        const currenciesWithoutRUB = currencies.filter(currency => currency.type !== CURRENCY_TYPE.RUB);
+    }
+
         const renderCurrencyRate = () => {
-            return currenciesWithoutRUB.map((currency, index) =>
+            return currencies
+                .filter(currency => currency.type !== CURRENCY_TYPE.RUB)
+                .map((currency, index) =>
                 <div key={index}>
                 <div className="currencyBlockName">
                     {currency.name}
@@ -30,11 +33,11 @@ const CurrencyRate: React.FC = () => {
 
     return (
         <div className="currencyRate">
-            <div className="nameBlock">
-                <div className="nameBlockTitleImg">
+            <div className="header">
+                <div className="headerTitleImg">
                     <img src="/dist/asset/images/world.png" alt={'World'} />
                 </div>
-                <div className="nameBlockTitleText">
+                <div className="headerTitleText">
                     Курс валют
                 </div>
             </div>
@@ -74,7 +77,6 @@ const CurrencyRate: React.FC = () => {
             </div>
         </div>
     );
-    }
 };
 
 export default CurrencyRate;

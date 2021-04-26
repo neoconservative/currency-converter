@@ -10,23 +10,24 @@ const Converter: React.FC = () => {
     const {historyConversions} = useTypedSelector(state => state.historyConversions);
     const dispatch = useDispatch();
 
-    function onConverted(historyConversion) {
-        let historyConversionsCopy = [...historyConversions || []];
-        if (historyConversions && historyConversionsCopy.length >= 10) {
+    function onConverted(latestConversion): void {
+        const historyConversionsCopy = [...historyConversions || []];
+
+        if (historyConversionsCopy.length >= 10) {
             historyConversionsCopy.splice(0, 1);
         }
 
-        historyConversionsCopy.push(historyConversion);
+        historyConversionsCopy.push(latestConversion);
         dispatch(setHistoryConversions(historyConversionsCopy));
     }
 
     return (
         <div className="converter">
-            <div className="converterNameBlock">
-                <div className="converterNameBlockTitleImg">
-                    <img src="/dist/asset/images/world.png" alt={'World'} />
+            <div className="converterHeader">
+                <div className="converterHeaderTitleImg">
+                    <img src="/dist/asset/images/world.png" alt='Currency converter logo' />
                 </div>
-                <div className="converterNameBlockTitleText">
+                <div className="converterHeaderTitleText">
                     Курс валют
                 </div>
             </div>

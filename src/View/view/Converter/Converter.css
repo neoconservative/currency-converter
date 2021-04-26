@@ -4,20 +4,20 @@
     height: 815px;
 }
 
-.converterNameBlock {
+.converteHeader {
     padding-left: 150px;
     padding-top: 60px;
     display: flex;
     flex-direction: row;
 }
-.converterNameBlockTitleText {
+.converterHeaderTitleText {
     font-size: 80px;
     line-height: 94px;
     color: var(--color-white);
     padding-left: 20px;
 }
 
-.converterNameBlockTitleImg {
+.converterHeaderTitleImg {
     width: 70px;
     height: 70px;
 }

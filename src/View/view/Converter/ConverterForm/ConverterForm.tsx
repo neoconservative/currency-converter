@@ -37,7 +37,7 @@ export class ConverterForm extends React.Component<Props, State> {
         };
     }
 
-    conversionRateFrom = (currentValueFrom) => {
+    conversionRateFrom = (currentValueFrom): void => {
         const { to, from } = this.state;
         const { currencies } = this.props;
         let newToValue;
@@ -75,7 +75,7 @@ export class ConverterForm extends React.Component<Props, State> {
     };
 
 
-    conversionRateTo = (currentValueTo) => {
+    conversionRateTo = (currentValueTo): void => {
         const { to, from } = this.state;
         const { currencies } = this.props;
         let newFromValue;
