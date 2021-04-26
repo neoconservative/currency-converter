@@ -11,37 +11,6 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
-
-            // { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') },
-//             {
-//                 test: /\.css$/i,
-//                 use: [MiniCssExtractPlugin.loader, 'css-loader' ]
-//
-//             // use: ['style-loader', 'css-loader'],
-//
-// }
-            // loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
-            // loader: "css-loader",
-
-
-            // options: {
-            //     modules: {
-            //         compileType: "module",
-            //         mode: "local",
-            //         auto: true,
-            //         exportGlobals: true,
-            //         localIdentName: "[path][name]__[local]--[hash:base64:5]",
-            //         localIdentContext: path.resolve(__dirname, "src"),
-            //         localIdentHashPrefix: "my-custom-hash",
-            //         namedExport: true,
-            //         exportLocalsConvention: "camelCaseOnly",
-            //         exportOnlyLocals: false,
-            //     },
-            // }
-            // },
-
-
-
             {
                 test: /\.css$/i,
                 use: [
@@ -112,16 +81,4 @@ module.exports = {
             ],
         }),
     ],
-    // plugins: [
-    //     new ExtractTextPlugin("styles.css"),
-    // ]
-
-    // devServer: {
-    //     contentBase: path.join(__dirname),
-    //     publicPath: '/dist/',
-    //     port: 5000,
-    //     progress: true,
-    //     disableHostCheck: true,
-    //     historyApiFallback: true
-    // }
 };
