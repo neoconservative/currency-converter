@@ -23,11 +23,11 @@ const Converter: React.FC = () => {
 
     return (
         <div className="converter">
-            <div className="converterHeader">
-                <div className="converterHeaderTitleImg">
+            <div className="header">
+                <div className="headerTitleImg">
                     <img src="/dist/asset/images/world.png" alt='Currency converter logo' />
                 </div>
-                <div className="converterHeaderTitleText">
+                <div className="headerTitleText">
                     Курс валют
                 </div>
             </div>
